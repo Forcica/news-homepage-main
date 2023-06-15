@@ -15,7 +15,7 @@ header {
 }
 
 body {
-    padding: 0 165px;
+    padding: 0 10%;
 }
 
 .selectHeader {
@@ -48,7 +48,7 @@ body {
 }
 
 .topLeftDiv img {
-    width: 730px;
+    width: 100%;
     height: 300px;
 }
 
@@ -61,7 +61,7 @@ body {
 .middleLeftDiv h2 {
     font-size: 55px;
     text-align: left;
-    width: 288px;
+    width: 50%;
     font-weight: 800;
     line-height: 1;
     margin-top: auto;
@@ -71,7 +71,7 @@ body {
 .contentMiddleLeftDiv {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 50%;
     margin-left: auto;
     height: 211px;
 }
@@ -101,7 +101,7 @@ body {
     color: #ffffff;
     padding: 0 24px;
     margin-left: auto;
-    width: 350px;
+    width: 31%;
     height: 510px;
 }
 
@@ -155,7 +155,8 @@ body {
 .bottomArticle {
     display: flex;
     flex-direction: row;
-    width: 380px;
+    width: 33%;
+    height: 100%;
 }
 
 .bottomArticle img {
@@ -164,8 +165,10 @@ body {
 }
 
 .contentBottomDiv {
-    width: 255px;
+    width: 70%;
+    height: 100%;
     margin-left: auto;
+
 }
 
 .contentBottomDiv h3 {
@@ -180,6 +183,7 @@ body {
     font-size: 18px;
     color: hsl(240, 100%, 5%);
     cursor: pointer;
+    height: 100%;
 }
 
 .contentBottomDiv p {
@@ -187,9 +191,36 @@ body {
     color: hsl(236, 13%, 42%);
     line-height: 1.8;
     cursor: pointer;
+    height: 100%;
+    width: 100%;
+
 }
 
-.contentBottomDiv:hover  h5{
+.contentBottomDiv:hover h5{
     color: hsl(5, 85%, 63%);
     transition: .5s;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+    body {
+        padding: 0 6%;
+    }
+
+    .selectHeader {
+        display: none;
+    }
+
+    .firstContainer {
+        flex-direction: column;
+    }
+
+    .middleLeftDiv {
+        flex-direction: column;
+    }
+
+    .contentMiddleLeftDiv {
+        width: 100%;
+    }
 }
